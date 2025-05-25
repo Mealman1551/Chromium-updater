@@ -1,10 +1,9 @@
 # Chromium Auto-Updater and Installer for Linux
 
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=plastic)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg?style=plastic)](#)
-[![Status](https://img.shields.io/badge/status-Active-success.svg?style=plastic)](#)
-[![Chromium](https://img.shields.io/badge/chromium-auto--updating-blue.svg?style=plastic)](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html)
-[![Shell Script](https://img.shields.io/badge/script-Bash-1f425f.svg?style=plastic)](#)
+[![Platform](https://img.shields.io/badge/platform-Linux-purple.svg?style=plastic)](#)
+[![Status](https://img.shields.io/badge/Develpment-Active-success.svg?style=plastic)](#)
+[![Shell Script](https://img.shields.io/badge/Language-Bash-89e051.svg?style=plastic)](#)
 
 
 This script automatically downloads and installs the latest official **Chromium** build for Linux from the [Chromium Snapshot Builds](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html). It also creates a `.desktop` launcher for easier access from your application menu.
