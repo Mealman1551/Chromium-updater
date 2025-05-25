@@ -1,6 +1,6 @@
 # Chromium Auto-Updater and Installer for Linux
 
-[![License](https://img.shields.io/badge/license-Public%20Domain-blue.svg?style=plastic)](LICENSE)
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=plastic)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg?style=plastic)](#)
 [![Status](https://img.shields.io/badge/status-Active-success.svg?style=plastic)](#)
 [![Chromium](https://img.shields.io/badge/chromium-auto--updating-blue.svg?style=plastic)](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html)
