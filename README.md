@@ -67,6 +67,8 @@ The .desktop file will be placed in ~/.local/share/applications/chromium.desktop
 
 This scipt is licensed under the GNU GPL v3
 
+---
+
 ##### Made with ❤️ by Mealman1551
 
 ###### &copy; 2025 Mealman1551
