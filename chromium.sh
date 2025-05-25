@@ -39,9 +39,6 @@ mkdir -p "$TMP_DIR"
 echo "→ Unzipping Chromium..."
 unzip -q "$ZIP_PATH" -d "$TMP_DIR"
 
-echo "→ Downloading Chromium SVG icon..."
-wget -q -O "$INSTALL_DIR/chromium_icon.svg" "https://upload.wikimedia.org/wikipedia/commons/2/28/Chromium_Logo.svg"
-
 echo "→ Deleting old Chromium without deleting user-data..."
 find "$INSTALL_DIR" -mindepth 1 -not -name "user-data" -exec rm -rf {} +
 
@@ -50,10 +47,13 @@ shopt -s dotglob
 mv "$TMP_DIR/chrome-linux/"* "$INSTALL_DIR/"
 shopt -u dotglob
 
+echo "→ Downloading Chromium SVG icon..."
+wget -q -O "$INSTALL_DIR/chromium_icon.svg" "https://upload.wikimedia.org/wikipedia/commons/2/28/Chromium_Logo.svg"
+
 echo "→ Cleaing up..."
 rm -rf "$ZIP_PATH" "$TMP_DIR"
 
-echo "Chromium is updated in $INSTALL_DIR"
+echo "Chromium is updated/installed in $INSTALL_DIR"
 echo ""
 
 if ! unshare --user --mount echo test &>/dev/null; then
