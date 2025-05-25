@@ -39,6 +39,9 @@ mkdir -p "$TMP_DIR"
 echo "→ Unzipping Chromium..."
 unzip -q "$ZIP_PATH" -d "$TMP_DIR"
 
+echo "→ Downloading Chromium SVG icon..."
+wget -q -O "$INSTALL_DIR/chromium_icon.svg" "https://upload.wikimedia.org/wikipedia/commons/2/28/Chromium_Logo.svg"
+
 echo "→ Deleting old Chromium without deleting user-data..."
 find "$INSTALL_DIR" -mindepth 1 -not -name "user-data" -exec rm -rf {} +
 
@@ -47,7 +50,7 @@ shopt -s dotglob
 mv "$TMP_DIR/chrome-linux/"* "$INSTALL_DIR/"
 shopt -u dotglob
 
-echo "→ Opruimen..."
+echo "→ Cleaing up..."
 rm -rf "$ZIP_PATH" "$TMP_DIR"
 
 echo "Chromium is updated in $INSTALL_DIR"
@@ -70,7 +73,7 @@ Name=Chromium
 Exec=$INSTALL_DIR/chrome --user-data-dir=$USERDATA_DIR --no-sandbox
 Comment=Chromium Web Browser
 Terminal=false
-Icon=$INSTALL_DIR/product_logo_48.png
+Icon=$INSTALL_DIR/chromium_icon.svg
 Type=Application
 Categories=Network;WebBrowser;
 EOF
