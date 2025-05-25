@@ -29,10 +29,12 @@ sudo apt install wget unzip
 Download or clone this repository.
 
 Run the script:
-
-chmod +x update_chromium.sh
+```bash
+chmod +x chromium.sh
+```
+```bash
 ./chromium.sh
-
+```
 ### Launch Chromium:
 
 From your application menu
